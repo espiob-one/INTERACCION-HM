@@ -1,5 +1,45 @@
-esta es una prueba
-hola mundo
-<P>ssss
-    <h1>Eat balance</h1>
-</P>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio de Sesión</title>
+    <link rel="stylesheet" href="inicio-sesion-styles.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Usuario / Email" required>
+                    <span class="icon">&#128100;</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Contraseña" required>
+                    <span class="icon">&#128274;</span>
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Recordar
+                    </label>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit" class="login-btn">Acceder</button>
+            </form>
+        </div>
+        <div class="welcome-container">
+            <h2>¡Hola Otra Vez!</h2>
+            <p>Para permanecer conectado con nosotros, por favor ingresa tus datos de inicio de sesión.</p>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('scroll', function () {
+        // Opcionalmente, puedes manejar efectos adicionales durante el scroll
+    });
+</script>
+
+</html>

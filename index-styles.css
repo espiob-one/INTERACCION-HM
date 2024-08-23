@@ -6,7 +6,8 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana */
+    min-height: 100vh;
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 }
 
 header {
@@ -15,6 +16,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .header-content {
@@ -56,13 +61,32 @@ header {
     border-radius: 50%;
 }
 
+/* Parallax Effect */
+.parallax {
+    /* Toma el ancho y alto completos de la pantalla */
+    height: 100vh; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-1 {
+    background-image: url('https://losrealesclub.com/wp-content/uploads/2019/09/nutricion.jpg');
+}
+
+.parallax-2 {
+    background-image: url('tu-segunda-imagen.jpg');
+}
+
 main {
-    padding: 20px;
+    padding: 100px 20px; /* Asegura que el contenido no quede debajo del header */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1; /* Hace que el main ocupe el espacio restante */
+    flex-grow: 1;
+    background-color: #f5f5f5;
 }
 
 .content {
@@ -72,26 +96,6 @@ main {
     width: 80%;
 }
 
-.images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.image-large {
-    width: 100%;
-    height: max-content;
-    border-radius: 10px;
-    margin-right: 0%;
-    margin-left: 0%;
-    background-size: cover;
-    background-position: top;
-}
-
-
-
-
 .text-content {
     text-align: center;
     margin-bottom: 20px;
@@ -100,53 +104,35 @@ main {
 .text-content p {
     color: black;
     line-height: 1.6;
-}
-
-.button-container {
+    font-size: 18px;
     margin: 20px 0;
 }
 
 .button-container {
-        display: inline-block;
-        padding: 15px 30px;
-        font-size: 18px;
-        font-weight: bold;
-        color: #000; /* Texto en color negro */
-        text-align: center;
-        text-decoration: none;
-        background: linear-gradient(to right, #91c320, #e18a24); /* Gradiente de izquierda a derecha */
-        border: none;
-        border-radius: 25px; /* Bordes redondeados */
-        cursor: pointer;
-        transition: background 0.3s ease; /* Transición suave para el hover */
-    }
-    
-    .button-container:hover {
-        background: linear-gradient(to right, #e18a24, #91c320); /* Cambia el gradiente en hover */
-        color: #fff; /* Cambia el color del texto en hover */
-    }
- 
-
-
-.icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(to right, #91c320, #e18a24);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-.icon {
-    width: 80px;
-    height: 100px;
-    background-color: #D06600;
-    border-radius: 10px;
-    margin: 0 10px;
+.button-container:hover {
+    background: linear-gradient(to right, #e18a24, #91c320);
+    color: #fff;
 }
 
 footer {
-    background-color: #333; /* Fondo negro */
+    background-color: #333;
     padding: 10px;
     color: white;
     text-align: center;
-    width: 100%; /* Asegura que cubra todo el ancho */
-    flex-shrink: 0; /* Evita que el footer se encoja */
+    width: 100%;
+    flex-shrink: 0;
 }

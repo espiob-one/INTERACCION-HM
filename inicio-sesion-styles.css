@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-container, .welcome-container {
+    padding: 40px;
+}
+
+.login-container {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group input {
+    
+    padding: 15px 50px 15px 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.options label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background: linear-gradient(to right, #8bc34a, #f57c00);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.welcome-container {
+    width: 50%;
+    background-color: #8bc34a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.welcome-container p {
+    font-size: 16px;
+}
+
+/* Media Queries para responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-container, .welcome-container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .welcome-container {
+        order: -1; /* Mueve la sección de bienvenida arriba en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .login-container {
+        text-align: center;
+        align-items: center;
+    }
+
+    .login-btn {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container h2, .welcome-container h2 {
+        font-size: 24px;
+    }
+
+    .input-group input {
+        padding: 10px 40px 10px 10px;
+        font-size: 14px;
+    }
+
+    .login-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
