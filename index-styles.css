@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana */
+}
+
+header {
+    background-color: #91c320;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.search-bar {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-options a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.toggle-btn {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* Hace que el main ocupe el espacio restante */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-large {
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+    margin-right: 0%;
+    margin-left: 0%;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+
+.text-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    color: black;
+    line-height: 1.6;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.button-container {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000; /* Texto en color negro */
+        text-align: center;
+        text-decoration: none;
+        background: linear-gradient(to right, #91c320, #e18a24); /* Gradiente de izquierda a derecha */
+        border: none;
+        border-radius: 25px; /* Bordes redondeados */
+        cursor: pointer;
+        transition: background 0.3s ease; /* Transición suave para el hover */
+    }
+    
+    .button-container:hover {
+        background: linear-gradient(to right, #e18a24, #91c320); /* Cambia el gradiente en hover */
+        color: #fff; /* Cambia el color del texto en hover */
+    }
+ 
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 80px;
+    height: 100px;
+    background-color: #D06600;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333; /* Fondo negro */
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 100%; /* Asegura que cubra todo el ancho */
+    flex-shrink: 0; /* Evita que el footer se encoja */
+}
