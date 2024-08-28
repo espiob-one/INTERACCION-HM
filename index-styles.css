@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    overflow-x: hidden;
 }
 
 header {
@@ -55,10 +55,18 @@ header {
 }
 
 .toggle-btn {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 40px;  /* Ajusta el tamaño de la imagen */
+    height: 40px;  /* Mantén las proporciones */
+    border-radius: 50%;  /* Hace que la imagen sea redonda */
+    object-fit: cover;  /* Se asegura de que la imagen llene el contenedor */
+    border: 2px solid #ccc;  /* Opcional: Añade un borde alrededor de la imagen */
 }
 
 /* Parallax Effect */
