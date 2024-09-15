@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.search-bar {
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-menu-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Estilos para la página de perfil */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.profile-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profile-info h2 {
+    margin: 10px 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+/* Ajustes para el menú lateral */
+.main-content {
+    transition: margin-left .3s;
+    padding: 16px;
+}

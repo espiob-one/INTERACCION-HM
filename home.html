@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eat Balance</title>
-    <link rel="stylesheet" href="index-styles.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -13,12 +13,18 @@
         <img src="image-removebg-preview.svg" alt="Logo" class="logo">
         <input type="text" placeholder="Buscar..." class="search-bar">
         <div class="user-options">
-            <a href="inicio-sesion.html">Iniciar Sesión</a>
-            <a href="registro.html">Registro</a>
-           
+            <!-- Imagen que actúa como botón para mostrar el menú lateral -->
+            <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
         </div>
     </div>
 </header>
+
+<!-- Menú lateral oculto -->
+<div id="sidebar" class="sidebar">
+    <a href="perfil.html">Perfil</a>
+    <a href="mis-recetas.html">Mis Recetas</a>
+    <a href="index.html">Cerrar Sesión</a>
+</div>
 
 <!-- Sección Parallax -->
 <div class="parallax parallax-1"></div>
@@ -42,6 +48,6 @@
     <!-- Pie de página si es necesario -->
 </footer>
 
+<script src="home-script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
