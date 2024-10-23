@@ -10,7 +10,10 @@
 
 <header>
     <div class="header-content">
-        <img src="image-removebg-preview.svg" alt="Logo" class="logo">
+        <!-- Envolver el logo en una etiqueta <a> para hacerlo un enlace -->
+        <a href="home.html">
+            <img src="image-removebg-preview.svg" alt="Logo" class="logo">
+        </a>
         <input type="text" placeholder="Buscar..." class="search-bar">
         <div class="user-options">
             <!-- Imagen que actúa como botón para mostrar el menú lateral -->
@@ -19,16 +22,16 @@
     </div>
 </header>
 
-<!-- Menú lateral oculto -->
+<!-- Fondo oscuro para la ventana modal -->
+<div id="modal-background" class="modal-background"></div>
+
+<!-- Menú emergente (ventana modal) -->
 <div id="sidebar" class="sidebar">
     <a href="perfil.html">Perfil</a>
     <a href="mis-recetas.html">Mis Recetas</a>
     <a href="Mis-rutinas.html">Mis Rutinas</a>
     <a href="index.html">Cerrar Sesión</a>
 </div>
-
-<!-- Sección Parallax -->
-<div class="parallax parallax-1"></div>
 
 <main>
     <section class="content">
@@ -42,13 +45,27 @@
     </section>
 </main>
 
-<!-- Otra Sección Parallax -->
-<div class="parallax parallax-2"></div>
-
 <footer>
     <!-- Pie de página si es necesario -->
 </footer>
 
 <script src="home-script.js"></script>
+
+<script>
+// JavaScript para alternar la ventana modal
+function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+    const modalBackground = document.getElementById("modal-background");
+
+    if (sidebar.style.display === "block") {
+        sidebar.style.display = "none";
+        modalBackground.style.display = "none";
+    } else {
+        sidebar.style.display = "block";
+        modalBackground.style.display = "block";
+    }
+}
+</script>
+
 </body>
 </html>

@@ -1,52 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eat Balance</title>
-    <link rel="stylesheet" href="index-styles.css">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="registro-style.css">
 </head>
 <body>
-
-<header>
-    <div class="header-content">
-        <img src="image-removebg-preview.svg" alt="Logo" class="logo">
-        <input type="text" placeholder="Buscar..." class="search-bar">
-        <div class="user-options">
-            <a href="inicio-sesion.html">Iniciar Sesión</a>
-            <a href="registro.html">Registro</a>
-           
-        </div>
+    <div class="form-container">
+        <form action="home.html" id="register-form">
+            <h1>Registrarse</h1>
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Correo" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
     </div>
-</header>
 
-<main>
-    <div  class="login-container">
-            <form action="home.html">
-                <h2>
-                    Registrarse
-                </h2>
-                <div>
-                    <input type="text">
-                </div>
-                <div>
-                    <input type="email">
-                </div>
-              <div>
-                <input type="password">
-              </div>
-              <div>
-                <input type="password">
-              </div>
-              <button type="submit" class="login-btn">Registrarse</button>
-            </form>
-    </div>
-</main>
-
-<footer>
-    <!-- Pie de página si es necesario -->
-</footer>
-
+    <!-- Colocar el script al final -->
+    <script src="registro-script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

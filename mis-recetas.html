@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eat Balance</title>
-    <link rel="stylesheet" href="index-styles.css">
+    <title>Eat Balance - Recetas</title>
+    <link rel="stylesheet" href="mis-recetas-style.css">
 </head>
 <body>
 
@@ -13,41 +13,60 @@
         <img src="image-removebg-preview.svg" alt="Logo" class="logo">
         <input type="text" placeholder="Buscar..." class="search-bar">
         <div class="user-options">
-            <a href="inicio-sesion.html">Iniciar Sesión</a>
-            <a href="registro.html">Registro</a>
-           
+            <!-- Imagen que actúa como botón para mostrar el menú lateral -->
+            <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
         </div>
     </div>
-
 </header>
 
 <main>
-    
-    <div>
-        <p>
-        <h2>
-            Platillos
-        </h2>
-        </p>
-        <div>
-            <h3>Tostadas de aguacate</h3>
-            <ol>2 rebanadas de pan integral</ol>            <ul>Dos huevos cocidos</ul>
-            <ul>2 huevos cocidos</ul>
-            <ul>1/4 de aguacate</ul>
-            <ol>Agregar tomate rebanado u otra verdura de su preferencia</ol>
+    <section class="recipe-list">
+        <h2>Platillos</h2>
+
+        <!-- Receta 1 -->
+        <div class="recipe">
+            <button class="recipe-title">Tostadas de aguacate</button>
+            <div class="recipe-content">
+                <h3>Ingredientes:</h3>
+                <ol>
+                    <li>2 rebanadas de pan integral</li>
+                    <li>1/4 de aguacate</li>
+                    <li>Agregar tomate rebanado u otra verdura de su preferencia</li>
+                </ol>
+                <h3>Preparación:</h3>
+                <ul>
+                    <li>Dos huevos cocidos</li>
+                    <li>Colocar el aguacate en las rebanadas de pan</li>
+                    <li>Agregar las verduras y disfrutar</li>
+                </ul>
+            </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-  
-    
+
+        <!-- Receta 2 -->
+        <div class="recipe">
+            <button class="recipe-title">Ensalada de quinoa</button>
+            <div class="recipe-content">
+                <h3>Ingredientes:</h3>
+                <ol>
+                    <li>1 taza de quinoa cocida</li>
+                    <li>1/2 taza de espinacas</li>
+                    <li>1/4 de tomate</li>
+                </ol>
+                <h3>Preparación:</h3>
+                <ul>
+                    <li>Mezclar todos los ingredientes</li>
+                    <li>Aliñar con aceite de oliva y sal</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
 </main>
 
 <footer>
     <!-- Pie de página si es necesario -->
 </footer>
 
+<script src="mis-recetas-script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
