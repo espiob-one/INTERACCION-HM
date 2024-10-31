@@ -1,0 +1,5 @@
+{
+    "dataworkspace.excludedProjects": [
+        "eatbalance-io/eatbalance-io.sqlproj"
+    ]
+}
