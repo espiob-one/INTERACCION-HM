@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #91c320;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.nav-menu {
+    margin-left: auto;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #e18a24;
+}
+
+.search-bar {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+main {
+    padding: 100px 20px 20px; /* Para evitar que el contenido quede oculto bajo el header */
+    flex-grow: 1;
+}
+
+.page-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.page-content h1 {
+    text-align: center;
+    color: #333;
+}
+
+.page-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    margin-right: 15px; /* Espacio entre la imagen de perfil y otros elementos */
+}

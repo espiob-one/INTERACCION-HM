@@ -8,17 +8,16 @@
 </head>
 
 <body>
-    
     <div class="container">
         <div class="login-container">
             <h2>Iniciar Sesión</h2>
-            <form action="home.html">
+            <form id="login-form">
                 <div class="input-group">
-                    <input type="text" placeholder="Usuario / Email" required>
+                    <input type="text" id="username" placeholder="Usuario / Email" required>
                     <span class="icon">&#128100;</span>
                 </div>
                 <div class="input-group">
-                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" id="password" placeholder="Contraseña" required>
                     <span class="icon">&#128274;</span>
                 </div>
                 <div class="options">
@@ -29,7 +28,6 @@
                 </div>
                 <button type="submit" class="login-btn">Acceder</button>
             </form>
-            
         </div>
         <div class="welcome-container">
             <h2>¡Hola Otra Vez!</h2>
@@ -37,9 +35,43 @@
         </div>
     </div>
 </body>
+
 <script>
-    document.addEventListener('scroll', function () {
-        // Opcionalmente, puedes manejar efectos adicionales durante el scroll
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita el envío tradicional del formulario
+
+        // Captura los valores de los campos
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Crea un objeto con los datos a enviar
+        const data = {
+            username: username,
+            password: password
+        };
+
+        // Enviar los datos al servidor usando fetch
+        fetch('http://localhost:3000/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.message === 'Inicio de sesión exitoso') {
+                alert('¡Inicio de sesión exitoso!');
+                // Redirige a home.html
+                window.location.href = 'home.html';
+            } else {
+                alert('Usuario o contraseña incorrectos');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Hubo un problema con la conexión al servidor');
+        });
     });
 </script>
 

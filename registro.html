@@ -8,17 +8,39 @@
 </head>
 <body>
     <div class="form-container">
-        <form action="home.html" id="register-form">
+        <form id="register-form" action="home.html" method="GET">
             <h1>Registrarse</h1>
             <input type="text" id="name" placeholder="Nombre" required>
             <input type="email" id="email" placeholder="Correo" required>
             <input type="password" id="password" placeholder="Contraseña" required>
             <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required>
+            
+            <!-- Nuevos campos -->
+            <select id="gender" required>
+                <option value="">Sexo</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+
+            <input type="number" id="age" placeholder="Edad" required>
+            <input type="number" id="weight" placeholder="Peso (kg)" required>
+
+            <select id="activity-level" required>
+                <option value="">Nivel de Actividad</option>
+                <option value="Sedentario">Sedentario</option>
+                <option value="Semi-sedentario">Semi-sedentario</option>
+                <option value="Activo">Activo</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="diabetes">
+                Tengo diabetes
+            </label>
+
             <button type="submit">Registrarse</button>
         </form>
     </div>
 
-    <!-- Colocar el script al final -->
     <script src="registro-script.js"></script>
 </body>
 </html>

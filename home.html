@@ -8,19 +8,31 @@
 </head>
 <body>
 
-<header>
-    <div class="header-content">
-        <!-- Envolver el logo en una etiqueta <a> para hacerlo un enlace -->
-        <a href="home.html">
-            <img src="image-removebg-preview.svg" alt="Logo" class="logo">
-        </a>
-        <input type="text" placeholder="Buscar..." class="search-bar">
-        <div class="user-options">
-            <!-- Imagen que actúa como botón para mostrar el menú lateral -->
-            <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
+    <header>
+        <div class="header-content">
+            <!-- Envolver el logo en una etiqueta <a> para hacerlo un enlace -->
+            <a href="home.html">
+                <img src="image-removebg-preview.svg" alt="Logo" class="logo">
+            </a>
+    
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="mis-recetas.html">Recetas</a></li>
+                    <li><a href="ejercicios.html">Ejercicios</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                </ul>
+            </nav>
+    
+            <input type="text" placeholder="Buscar..." class="search-bar">
+            <div class="user-options">
+                <!-- Imagen que actúa como botón para mostrar el menú lateral -->
+                <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+    
 
 <!-- Fondo oscuro para la ventana modal -->
 <div id="modal-background" class="modal-background"></div>
