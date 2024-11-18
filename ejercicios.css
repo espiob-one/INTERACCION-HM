@@ -109,7 +109,7 @@ header {
 }
 
 /* Recipes */
-.recipes {
+.excersise {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
