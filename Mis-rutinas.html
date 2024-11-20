@@ -3,52 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eat Balance - Rutinas</title>
-    <link rel="stylesheet" href="mis-rutinas-style.css">
+    <title>Eat Balance</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-<header>
-    <div class="header-content">
-        <img src="image-removebg-preview.svg" alt="Logo" class="logo">
-        <input type="text" placeholder="Buscar..." class="search-bar">
-        <div class="user-options">
-            <!-- Imagen que actúa como botón para mostrar el menú lateral -->
-            <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
-        </div>
-    </div>
-</header>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <!-- Logo con enlace a la página principal -->
+            <a href="home.html">
+                <img src="image-removebg-preview.svg" alt="Logo" class="logo">
+            </a>
 
-<main>
-    <section class="routine-list">
-        <h2>Platillos</h2>
-
-        <!-- Receta 1 -->
-        <div class="routine">
-            <button class="routine-title">Tostadas de aguacate</button>
-            <div class="routine-content">
-                <h3>Ingredientes:</h3>
-                <ol>
-                    <li>2 rebanadas de pan integral</li>
-                    <li>1/4 de aguacate</li>
-                    <li>Agregar tomate rebanado u otra verdura de su preferencia</li>
-                </ol>
-                <h3>Preparación:</h3>
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
                 <ul>
-                    <li>Dos huevos cocidos</li>
-                    <li>Colocar el aguacate en las rebanadas de pan</li>
-                    <li>Agregar las verduras y disfrutar</li>
+                    <li><a href="mis-recetas.html">Recetas</a></li>
+                    <li><a href="ejercicios.html">Ejercicios</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
                 </ul>
+            </nav>
+
+            <!-- Barra de búsqueda -->
+            <input type="text" placeholder="Buscar..." class="search-bar">
+
+            <!-- Icono de usuario para el menú lateral -->
+            <div class="user-options">
+                <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
             </div>
         </div>
-    </section>
-</main>
+    </header>
 
-<footer>
-    <!-- Pie de página si es necesario -->
-</footer>
+   <!-- Fondo oscuro para la ventana modal -->
+<div id="modal-background" class="modal-background"></div>
 
-<script src="mis-recetas-script.js"></script>
+<!-- Menú emergente (ventana modal) -->
+<div id="sidebar" class="sidebar">
+    <a href="perfil.html">Perfil</a>
+    <a href="mis-recetas.html">Mis Recetas</a>
+    <a href="Mis-rutinas.html">Mis Rutinas</a>
+    <a href="index.html">Cerrar Sesión</a>
+</div>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="content">
+            <div class="text-content">
+                <p>Mantener una buena salud es el regalo más valioso que puedes darte a ti mismo...</p>
+                <p>Recuerda que tu salud es la base de todo lo que amas y aspiras a lograr...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página opcional -->
+    </footer>
+
+    <script src="ejercicios.css"></script>
+    <script>function toggleMenu() {
+        const sidebar = document.getElementById("sidebar");
+        const modalBackground = document.getElementById("modal-background");
+    
+        if (sidebar.style.display === "block") {
+            sidebar.style.display = "none";
+            modalBackground.style.display = "none";
+        } else {
+            sidebar.style.display = "block";
+            modalBackground.style.display = "block";
+        }
+    }</script>
+
 </body>
 </html>
-
