@@ -11,7 +11,14 @@
 <header>
     <div class="header-content">
         <img src="image-removebg-preview.svg" alt="Logo" class="logo">
-        <input type="text" placeholder="Buscar..." class="search-bar">
+                <form id="searchForm" onsubmit="return false;">
+                    <input 
+                        type="text" 
+                        id="searchBar" 
+                        placeholder="Buscar..." 
+                        class="search-bar" 
+                        oninput="performSearch()">
+                </form>
         <div class="user-options">
             <!-- Imagen que actúa como botón para mostrar el menú lateral -->
             <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
@@ -25,9 +32,9 @@
 
         <!-- Receta 1 -->
         <div class="routine">
-            <button class="routine-title">Tostadas de aguacate</button>
             <div class="routine-content">
-                <h3>Ingredientes:</h3>
+                <h3>Rutina de cuerpo completo para hacer en casa</h3>
+                <P>Es muy importante para mantener un cuerpo en forma el realizar actividad física, con esta rutina de cuerpo completo podrás trabajar todos los músculos principales del cuerpo desde la comodidad de tu casa.</P>
                 <ol>
                     <li>2 rebanadas de pan integral</li>
                     <li>1/4 de aguacate</li>

@@ -108,6 +108,27 @@ app.get('/profile', (req, res) => {
     });
 });
 
+// Ruta para la barra de búsqueda
+app.get('/search-recipes', (req, res) => {
+    const searchQuery = req.query.q || ''; // Captura la consulta de búsqueda
+    const sql = `
+        SELECT title, description, ingredients, steps 
+        FROM recipes 
+        WHERE title LIKE ? OR description LIKE ?;
+    `;
+    const values = [`%${searchQuery}%`, `%${searchQuery}%`];
+
+    connection.query(sql, values, (err, results) => {
+        if (err) {
+            console.error('Error en la consulta:', err);
+            res.status(500).json({ error: 'Error al realizar la consulta' });
+        } else {
+            res.json(results);
+        }
+    });
+});
+
+
 // Iniciar el servidor
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);

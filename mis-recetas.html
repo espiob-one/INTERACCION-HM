@@ -25,7 +25,14 @@
                 </ul>
             </nav>
     
-            <input type="text" placeholder="Buscar..." class="search-bar">
+            <form id="searchForm" onsubmit="return false;">
+                <input 
+                    type="text" 
+                    id="searchBar" 
+                    placeholder="Buscar..." 
+                    class="search-bar" 
+                    oninput="performSearch()">
+            </form>
             <div class="user-options">
                 <!-- Imagen que actúa como botón para mostrar el menú lateral -->
                 <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
