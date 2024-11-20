@@ -7,15 +7,11 @@
     <link rel="stylesheet" href="mis-recetas.css">
 </head>
 <body>
-
     <header>
         <div class="header-content">
-            <!-- Envolver el logo en una etiqueta <a> para hacerlo un enlace -->
             <a href="home.html">
                 <img src="image-removebg-preview.svg" alt="Logo" class="logo">
             </a>
-    
-            <!-- Menú de navegación -->
             <nav class="nav-menu">
                 <ul>
                     <li><a href="mis-recetas.html">Recetas</a></li>
@@ -24,14 +20,13 @@
                     <li><a href="bebidas.html">Bebidas</a></li>
                 </ul>
             </nav>
-    
             <input type="text" placeholder="Buscar..." class="search-bar">
             <div class="user-options">
-                <!-- Imagen que actúa como botón para mostrar el menú lateral -->
                 <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
             </div>
         </div>
     </header>
+<<<<<<< HEAD
     <!-- Fondo oscuro para la ventana modal -->
 <div id="modal-background" class="modal-background"></div>
 
@@ -42,6 +37,8 @@
     <a href="Mis-rutinas.html">Mis Rutinas</a>
     <a href="index.html">Cerrar Sesión</a>
 </div>
+=======
+>>>>>>> 0fa95bff2c7e7dbb6ee1d5f45aa984eeb5bd9bf7
 
     <!-- Pestañas de categorías -->
     <div class="tabs">
@@ -51,27 +48,127 @@
         <button class="tab" onclick="showTab('snacks')">Snacks</button>
     </div>
 
-    <!-- Contenedor de las recetas -->
+    <!-- Secciones de recetas -->
     <section class="recipes" id="desayunos">
         <div class="recipe-card">
             <h2>AVO TOAST</h2>
             <p>2 reb de pan integral<br>2 huevos cocidos<br>1/4 de aguacate<br>Agregar tomate rebanado u otra verdura de su preferencia</p>
-            <img src="avo-toast.jpg" alt="Avo Toast">
+            <img src="tomato-avocado-toast-1080x1353 (1).jpg" alt="Avo Toast">
         </div>
+        <div class="recipe-card">
+            <h2>HUEVO CON VERDURAS</h2>
+            <p>2 huevos<br>1 taza de verduras<br>Cocinar con 1 cuch de aceite de oliva<br>2 tortillas de maíz</p>
+            <img src="huevoconverdura.jpg" alt="Huevo con verdura">
+        </div>
+        <div class="recipe-card">
+            <h2>SANDWICH DE HUEVO</h2>
+            <p>2 rebanadas de pan integral <br>2 huevos revueltos con espinaca<br>Rebanadas de tomate<br>1/4 de aguacate</p>
+            <img src="Sandwich de huevo.jpg" alt="Sandwich de Huevo"
+        ></div>
+        <div class="recipe-card">
+            <h2>FRENCH TOAST</h2>
+            <p>2 rebanadas de pan integral<br>2 huevos batidos con 1/2 cucharadita de canela<br>Topping:1 taza de furtos rojos<br>Miel de abeja al gusto</p>
+            <img src="frecnch toast.jpg" alt="French Toast"
+        ></div>
+        <div class="recipe-card">
+            <h2>LICUADO DE PAPAYA</h2>
+            <p>1 taza de leche de almendras o leche normal<br>1 taza de papaya<br>10 almendras<br>1/4 de taza de avena en hojuelas</p>
+            <img src="licuado de papaya.jpg" alt="Licuado de papaya"
+        ></div>
+        <div class="recipe-card">
+            <h2>AVENA TRASNOCHADA</h2>
+            <p>1 taza de leche<br>1/2 taza de avena<br>1 cucharada de chía<br>10 amendras fileteadas<br>1/2 scoop de proteina Habits (si no se cuenta con esto agregar alguna fruta como platano o fresa)</p>
+            <img src="avena (1) (1).jpeg" alt="Avena Trasnochada"
+        ></div>
+        <div class="recipe-card">
+            <h2>GUISO DE PAVO CON ACELGAS</h2>
+            <p>1 taza de acelgas <br>Tomate y cebolla al gusto<br>4 rebanadas de pechuga de pavo en cuadritos<br>Guisar con un poco de aceite<br>2 torillas de maiz<br>1/4 de aguacate</p>
+            <img src="PAVOYACELGAS (1) (1).jpeg" alt="Guiso de Pavo con Acelgas"
+        ></div>
+        <div class="recipe-card">
+            <h2>CHILAQUILES</h2>
+            <p>1 taza de totopos Susalia/Sanissimo<br>Salsa verde al gusto<br>60g de pollo desmenuzado<br>Un puñito de queso panela encima<br>Crema deslactosada para poner encima<br>Escoger verduras al gusto para acompañar</p>
+            <img src="chilaquioles (1) (1).jpeg" alt="Chilaquiles"
+        ></div>
+        <div class="recipe-card">
+            <h2>QUESADILLAS DE MAIZ</h2>
+            <p>2 torillas de maíz<br>Rellenar con queso panela rebanado (puede ser queso asadero tambien)<br>Elegir 1 verdura:pepino,espinacas o lechuga<br>1/4 de aguacate</p>
+            <img src="quesadillas (1) (1).jpg" alt="Quesadillas de maiz"
+        ></div>
+        <div class="recipe-card">
+            <h2>HOT CAKES DE AVENA</h2>
+            <p>1/4 de taza de avena en hojuelas<br>1/2 platano<br>2 huevos<br>Canela y vainilla al gusto<br>Un chorrito de leche<br>Hacer la preparación normal de un Hot cake, se le puede echar mantequilla<br>Agregar miel</p>
+            <img src="receta-facil-de-hot-cakes-de-avena (1) (1).jpg" alt="Hot cakes de avena"
+        ></div>
+    </section>
+
+    <section class="recipes" id="comidas">
         <div class="recipe-card">
             <h2>FLAUTAS DE POLLO</h2>
-            <p>3 tortillas de maíz<br>Rellenar ligeramente con pollo deshebrado aprox 60g cada tortilla<br>Dorar con poco aceite<br>Acompañar con lechuga, zanahoria rallada, espinacas, etc.<br>1/3 de aguacate con cilantro, limón y tomate picado.</p>
-            <img src="flautas.jpg" alt="Flautas de Pollo">
+            <p>3 tortillas de maíz<br>Rellenar ligeramente con pollo deshebrado (aprox 60g por tortilla)<br>Dorar con poco aceite<br>Acompañar con lechuga, zanahoria rallada, espinacas, etc.<br>1/3 de aguacate con cilantro, limón y tomate picado.</p>
+            <img src="Flautas-de-pollo (1) (1).jpg" alt="Flautas de Pollo">
         </div>
+        <div class="recipe-card">
+            <h2>BOWL DE FAJITAS DE POLLO</h2>
+            <p>90g de milanesa de pollo en fajitas<br>Agregar sobre cama de 3/4 de taza de arroz integral o arroz normal<br>1 taza de verduras al gusto<br></p>
+            <img src="bowlpollo (1) (1).jpg" alt="Bowl de Fajitas de Pollo">
+        </div>
+        <div class="recipe-card">
+            <h2>TAQUITOS DE CAMARON</h2>
+            <p>120g de camarón<br>Guisar con tomate, pimientos y 1 cucharadita de mantequilla<br>Acompañar con col morada o lechuga<br>4-5 tortillas delgaditas<br>1/3 de aguacate</p>
+            <img src="tacoscamaron (1) (1).jpeg" alt="Tacos de camaron">
+        </div>
+        <div class="recipe-card">
+            <h2>FILETE DE PESCADO</h2>
+            <p>2 filetes de pescado<br>Se puede empanizar con lo que guste, o tambien se puede dejar sin empanizar<br>Cocinar con un poco de aceite<br>Acompañar con limón<br>Acompañar con 1 taza de verdura al gusto<br>3/4 taza de arroz</p>
+            <img src="recetas-de-filete-de-pescado-con-ensaladas-cremosas1 (1) (1).jpg" alt="">
+        </div>
+        <div class="recipe-card">
+            <h2>CODITOS CON POLLO</h2>
+            <p>3/4 taza de coditos<br>90g de pollo<br>2 rebanadas de pechuga de pavo en cuadritos<br>1 cucharada de mayonesa<br>1 cucharada de aceite de oliva<br>Escoger verdura al gusto</p>
+            <img src="coditosconpollo (1) (1).jpg" alt="Coditos Con Pollo">
+        </div>
+        <div class="recipe-card">
+            <h2>CALDO TLALPEÑO</h2>
+            <p>120g de pollo desmenuzado<br>1/2 taza de verduras:calabacita, chayote, zanahoria, etc,<br>1/4 taza de arroz<br>1/4 taza de garbanzos<br>30g de queso panela en cubitos<br>1/3 de aguacate</p>
+            <img src="caldo (1).jpeg" alt="Caldo Tlalpeño">
+        </div>
+        <div class="recipe-card">
+            <h2>SALMON</h2>
+            <p>120g de salmón<br>8 espárragos<br>1 taza de brocoli con un poco de mantequilla<br>Hacer pure de papa con: 1 papa machacada, 1 chorrito de leche y un poco de mantequilla</p>
+            <img src="salmon (1) (1).jpg" alt="Salmon">
+        </div>
+        <div class="recipe-card">
+            <h2>ATÚN CON PASTA</h2>
+            <p>1-2 sobres de atún en agua<br>2/3 de taza de pasta de tornillo<br>1 cucharada de aceite de oliva<br>1 cucharada de mayonesa<br>Acompañar con verduras a elegir</p>
+            <img src="pasta-con-atun-2946 (1) (1).jpg" alt="Atún con pasta">
+        </div>
+        <div class="recipe-card">
+            <h2>TACOS DE DESHEBRADA</h2>
+            <p>3-4 tortillas de maíz<br>Rellenar con 120g de deshebrada<br>Agregar pico de gallo:Tomate, cilantro y cebolla<br>Limón al gusto<br>Salsa al gusto<br>1/3 de aguacate</p>
+            <img src="tacosdeshebrada (1) (1).jpeg" alt="Tacos de Deshebrada">
+        </div>
+        
+    </section>
+
+    <section class="recipes" id="cenas">
         <div class="recipe-card">
             <h2>MOLLETES</h2>
-            <p>2 reb de pan integral<br>1/3 de taza de frijoles<br>90g de queso panela rallado<br>Acompañar con varitas de pepino o zanahoria en varitas o aguacate.</p>
+            <p>2 reb de pan integral<br>1/3 de taza de frijoles<br>90g de queso panela rallado<br>Acompañar con pepino, zanahoria o aguacate.</p>
             <img src="molletes.jpg" alt="Molletes">
         </div>
+    </section>
+
+    <section class="recipes" id="snacks">
         <div class="recipe-card">
             <h2>ROLLITOS DE PAVO</h2>
-            <p>4 rollitos de pechuga de pavo<br>Rellenar con queso panela<br>1 puñito de almendras</p>
-            <img src="rollitos.jpg" alt="Rollitos de Pavo">
+            <p>4 rollitos de pechuga de pavo<br>Rellenar con queso panela</p>
+            <img src="Rollitos de jamon.jpeg" alt="Rollitos de Pavo">
+        </div>
+        <div class="recipe-card">
+            <h2>Inserte receta</h2>
+            <p>INGREDIENTES<br>Instrucciones<br>Dorar con poco aceite<br>Acompañar con lechuga, zanahoria rallada, espinacas, etc.</p>
+            <img src="imagen" alt="">
         </div>
     </section>
 
@@ -81,16 +178,5 @@
     </footer>
 
     <script src="mis-recetas.js"></script>
-    <script>function toggleMenu() {
-        const sidebar = document.getElementById("sidebar");
-        const modalBackground = document.getElementById("modal-background");
-    
-        if (sidebar.style.display === "block") {
-            sidebar.style.display = "none";
-            modalBackground.style.display = "none";
-        } else {
-            sidebar.style.display = "block";
-            modalBackground.style.display = "block";
-        }
-    }</script>
 </body>
+</html>
