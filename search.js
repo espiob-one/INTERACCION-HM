@@ -81,4 +81,4 @@ function toggleMenu() {
 }
 
 // Mostrar la pestaña de "Desayunos" al cargar la página
-document.addEventListener('DOMContentLoaded', () => showTab('desayunos', 'recipes'));
+document.addEventListener('DOMContentLoaded', () => showTab('mis-recetas', 'recipes'));
