@@ -31,19 +31,39 @@ function performSearch() {
     if (query.length > 0) {
         // Enviar el término al servidor
         fetch(`/search-recipes?q=${encodeURIComponent(query)}`)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`Error en la respuesta del servidor: ${response.statusText}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Resultados obtenidos:', data); // Verifica los resultados aquí
-        // Renderiza los datos en la interfaz
-    })
-    .catch(error => {
-        console.error('Error al realizar la búsqueda:', error);
-    });
+            .then(response => response.json())
+            .then(data => {
+                const recipeList = document.querySelector('.recipe-list'); // Contenedor de recetas
+                recipeList.innerHTML = '<h2>Resultados de búsqueda</h2>'; // Título de resultados
+
+                if (data.length > 0) {
+                    // Mostrar resultados
+                    data.forEach(recipe => {
+                        const recipeHTML = `
+                            <div class="recipe">
+                                <div class="recipe-content">
+                                    <h3>${recipe.title}</h3>
+                                    <p>${recipe.description}</p>
+                                    <ol>
+                                        ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                                    </ol>
+                                    <h3>Preparación:</h3>
+                                    <ul>
+                                        ${recipe.steps.map(step => `<li>${step}</li>`).join('')}
+                                    </ul>
+                                </div>
+                            </div>
+                        `;
+                        recipeList.innerHTML += recipeHTML;
+                    });
+                } else {
+                    // Sin resultados
+                    recipeList.innerHTML += '<p>No se encontraron recetas.</p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error al realizar la búsqueda:', error);
+            });
     } else {
         // Si no hay texto, puedes mostrar un mensaje o restaurar las recetas originales
         console.log('Barra de búsqueda vacía.');
