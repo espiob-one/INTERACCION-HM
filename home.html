@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eat Balance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -25,55 +26,80 @@
     
             <input type="text" placeholder="Buscar..." class="search-bar">
             <div class="user-options">
-                <!-- Imagen que actúa como botón para mostrar el menú lateral -->
                 <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
             </div>
         </div>
     </header>
-    
 
-<!-- Fondo oscuro para la ventana modal -->
-<div id="modal-background" class="modal-background"></div>
+    <!-- Fondo oscuro para la ventana modal -->
+    <div id="modal-background" class="modal-background"></div>
 
-<!-- Menú emergente (ventana modal) -->
-<div id="sidebar" class="sidebar">
-    <a href="perfil.html">Perfil</a>
-    <a href="mis-recetas.html">Mis Recetas</a>
-    <a href="Mis-rutinas.html">Mis Rutinas</a>
-    <a href="index.html">Cerrar Sesión</a>
-</div>
+    <!-- Menú emergente (ventana modal) -->
+    <div id="sidebar" class="sidebar">
+        <a href="perfil.html">Perfil</a>
+        <a href="mis-recetas.html">Mis Recetas</a>
+        <a href="Mis-rutinas.html">Mis Rutinas</a>
+        <a href="index.html">Cerrar Sesión</a>
+    </div>
 
+<<<<<<< HEAD
+    <main>
+        <section class="hero">
+            <img src="fondo.png" alt="Imagen Principal" class="hero-image">
+            <div class="hero-text">
+                <h1>Bienvenido a Eat Balance, <br>Hades
+                </h1>
+               
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="text-content">
+                <p>El bienestar comienza con pequeños hábitos diarios. Aquí tienes algunos consejos para mejorar tu salud:</p>
+                <ul>
+                    <li><strong>Hidrátate correctamente:</strong> Beber suficiente agua es fundamental para mantener tu cuerpo funcionando de manera óptima. Intenta beber al menos 8 vasos al día.</li>
+                    <li><strong>Come equilibradamente:</strong> Una dieta rica en frutas, verduras, proteínas magras y granos enteros te proporcionará la energía que necesitas para cada día.</li>
+                    <li><strong>Haz ejercicio regularmente:</strong> Realizar actividades físicas, como caminar, correr o practicar yoga, mejora tu bienestar físico y mental.</li>
+                    <li><strong>Descansa lo suficiente:</strong> El descanso es vital para la regeneración de tu cuerpo. Asegúrate de dormir al menos 7-8 horas cada noche.</li>
+                    <li><strong>Cuida tu salud mental:</strong> Dedica tiempo para ti mismo, medita, practica mindfulness y rodéate de personas que te aporten positividad.</li>
+                </ul>
+                <p>Recuerda que cada pequeño cambio cuenta y con esfuerzo, puedes alcanzar un estilo de vida más saludable y equilibrado. ¡Empieza hoy y siente la diferencia!</p>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Eat Balance. Todos los derechos reservados.</p>
+            <p>Equipo 4 </p>
+=======
 <main>
     <section class="content">
         <div class="text-content">
             <p>¡Hola usuario nutri! Mantener una buena salud es el regalo más valioso que puedes darte a ti mismo. Imagina despertar cada día con energía, con la mente clara y con el cuerpo listo para enfrentar cualquier desafío. La salud no es solo la ausencia de enfermedades, es un estado de bienestar que te permite disfrutar de cada momento de la vida al máximo.</p>
             <p>Recuerda que tu salud es la base de todo lo que amas y aspiras a lograr. ¡Empieza hoy a construir un futuro más saludable y feliz! Porque mereces sentirte bien, fuerte y lleno de vida. ¡Tu cuerpo y mente te lo agradecerán!</p>
+>>>>>>> 6e9329cb8fcacc42d8b9e0595a1097ef55bd35ea
         </div>
-     
-    </section>
-</main>
+    </footer>
 
-<footer>
-    <!-- Pie de página si es necesario -->
-</footer>
+    <script src="home-script.js"></script>
 
-<script src="home-script.js"></script>
+    <script>
+        // JavaScript para alternar la ventana modal
+        function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            const modalBackground = document.getElementById("modal-background");
 
-<script>
-// JavaScript para alternar la ventana modal
-function toggleMenu() {
-    const sidebar = document.getElementById("sidebar");
-    const modalBackground = document.getElementById("modal-background");
-
-    if (sidebar.style.display === "block") {
-        sidebar.style.display = "none";
-        modalBackground.style.display = "none";
-    } else {
-        sidebar.style.display = "block";
-        modalBackground.style.display = "block";
-    }
-}
-</script>
+            if (sidebar.style.display === "block") {
+                sidebar.style.display = "none";
+                modalBackground.style.display = "none";
+            } else {
+                sidebar.style.display = "block";
+                modalBackground.style.display = "block";
+            }
+        }
+    </script>
 
 </body>
 </html>
