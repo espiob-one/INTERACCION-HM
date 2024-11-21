@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,9 @@
 
 <header>
     <div class="header-content">
-    <img src="image-removebg-preview.svg" alt="Logo" class="logo" href="home.html">
-    
+        <a href="home.html">
+            <img src="image-removebg-preview.svg" alt="Logo" class="logo">
+        </a>
         <div class="user-options">
             <button class="toggle-menu-btn" onclick="toggleMenu()">☰</button>
         </div>
@@ -28,25 +29,35 @@
 
 <main>
     <section class="profile-container">
-        <div class="profile-picture">
-            <img src="Sin título (2).png" alt="Foto de perfil">
+        <div class="profile-header">
+            <div class="profile-picture">
+                <img src="Sin título (2).png" alt="Foto de perfil">
+            </div>
+            <div class="profile-info">
+                <h2>Bienvenido, <span id="nombre">Hades Guevara</span></h2>
+                <ul>
+                    <li><strong>Edad:</strong> <span id="edad">30 años</span></li>
+                    <li><strong>Sexo:</strong> <span id="sexo">Masculino</span></li>
+                    <li><strong>Nivel de Actividad:</strong> <span id="nivel_actividad">Moderado</span></li>
+                    <li><strong>Peso:</strong> <span id="peso">75 kg</span></li>
+                    <li><strong>Diabetes:</strong> <span id="diabetes">No</span></li>
+                </ul>
+            </div>
         </div>
-        <div class="profile-info">
-            <h2 id="nombre">Nombre:</h2>
-            <p id="edad">Edad:</p>
-            <p id="sexo">Sexo:</p>
-            <p id="nivel_actividad">Nivel de Actividad:</p>
-            <p id="peso">Peso:</p>
-            <p id="diabetes">Diabetes:</p>
-        </div>
-        
     </section>
 </main>
 
 <footer>
-    <!-- Pie de página si es necesario -->
+    <p>&copy; 2024 Eat Balance. Todos los derechos reservados.</p>
 </footer>
 
-<script src="perfil.js"></script>
+<script>
+    // Aquí va el script para el menú lateral
+    function toggleMenu() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');
+    }
+</script>
+
 </body>
 </html>

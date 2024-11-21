@@ -175,3 +175,18 @@ footer {
 .dropdown.show .dropdown-content {
     display: block;
 }
+/* Texto de fondo gigante */
+.body-background-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Asegura que quede detrás del contenido principal */
+    font-size: 6vw; /* Ajusta el tamaño del texto según la pantalla */
+    color: rgba(200, 200, 200, 0.1); /* Texto translúcido */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto se divida en líneas */
+    pointer-events: none; /* Hace que el texto no interfiera con clics */
+}
