@@ -19,7 +19,19 @@
                     <li><a href="bebidas.html">Bebidas</a></li>
                 </ul>
             </nav>
+<<<<<<< HEAD
+    
+            <form id="searchForm" onsubmit="return false;">
+                <input 
+                    type="text" 
+                    id="searchBar" 
+                    placeholder="Buscar..." 
+                    class="search-bar" 
+                    oninput="performSearch()">
+            </form>
+=======
             <input type="text" placeholder="Buscar..." class="search-bar">
+>>>>>>> 08c2585b7bbdcd0a5d51e7f8f4ffed99a4e26ab1
             <div class="user-options">
                 <img src="Sin título (2).PNG" alt="Icono del menú" class="menu-icon" onclick="toggleMenu()">
             </div>
@@ -42,6 +54,7 @@
         <button class="tab" onclick="showTab('comidas')">Comidas</button>
         <button class="tab" onclick="showTab('cenas')">Cenas</button>
         <button class="tab" onclick="showTab('snacks')">Snacks</button>
+        <button class="tab" onclick="showTab('bebidas')">Bebidas</button>
     </div>
 
     <!-- Secciones de recetas -->
@@ -151,22 +164,156 @@
         <div class="recipe-card">
             <h2>MOLLETES</h2>
             <p>2 reb de pan integral<br>1/3 de taza de frijoles<br>90g de queso panela rallado<br>Acompañar con pepino, zanahoria o aguacate.</p>
-            <img src="molletes.jpg" alt="Molletes">
+            <img src="Mollete.jpg" alt="Molletes">
         </div>
+        <div class="recipe-card">
+            <h2>SANDWICH DE ENSALADA DE POLLO</h2>
+            <p>2 Rebanadas de pan integral<br>Agregr 90 g de pollo con una cucharada de mayoonesa<br>Agregar rebanadas de pepino<br>Agregar zanahoria rallada<br>Agregar hojas de lechuga</p>
+            <img src="Sandwich de pollo.jpg" alt="Sandwich de ensalada de pollo">
+        </div>
+        <div class="recipe-card">
+            <h2>TOSTADAS DE POLLO</h2>
+            <p>3 Tostadas Sanissimo<br>Untar 1/2 taza de frijoles a las tostadas<br>Agregar 25 g de pollo desmenuazdo a cada tostada<br>Agregar 1/3 de penca de nopal en cuadritos a cada tostada(asar en el comal con un poco de aceite)<br> Agregar tres rebanadas de Aguacate rebanado</p>
+            <img src="Tostadas de pollo.jpg" alt="Tostadas de pollo">
+        </div>
+        <div class="recipe-card">
+            <h2>TACOS DE HUEVO</h2>
+            <p>3 Tortillas de maiz<br>2-3pzas de huevo<br>Revolver el huevo con Verduras a elegir<br>Acompañar con 1/3 de aguacte</p>
+            <img src="Tacos de huevo.jpg" alt="Tacos de huevo">
+        </div>
+        <div class="recipe-card">
+            <h2>ENSALADA DE ROLLITOS DE PAVO</h2>
+            <p>1-2 Tazas de lechuga con espinacas, zanahoria y tomate<br>4 Rollitos de pechuga de pavo rebanados<br>1/2tza de elote desgranado + 1/2tza de coditos<br>1 cucharadita de mayoneza</p>
+            <img src="Ensalada de rollitos de pavo.jpg" alt="Ensalada de rollitos de pavo">
+        </div>
+        <div class="recipe-card">
+            <h2>HUEVO CON PAPA</h2>
+            <p>2 huevos + 2 claras<br>1 papa mediana picada<br>1 taza de acelgas, tomate y cebolla al gusto<br>Cocinar con un poco de aceite<br>1/4 de aguacate y salsa al gusto</p>
+            <img src="Huevo con papa.jpg" alt="Huevo con papa">
+        </div>
+        <div class="recipe-card">
+            <h2>TAQUITOS DE BISTEC</h2>
+            <p>3 tortillas de maiz<br>80g de bistec cocinado con pimientos<br>Salsa al gusto<br>1/4 de aguacate rebanadoo</p>
+            <img src="Taquitos de bistec.jpg" alt="Taquitos de bistec">
+        </div>
+        <div class="recipe-card">
+            <h2>CEVICHE</h2>
+            <p>Revolver 1tza de atún + jugo de limón + 1/2 tomate + cilantro+ 1/4 de pepino + espinacas<br>Acompañar con 2 tostadas de maiz Sanissimo<br>Si gusta agregar 1/2 de aguacate</p>
+            <img src="Ceviche.jpeg" alt="Ceviche">
+        </div>
+        <div class="recipe-card">
+            <h2>YOGUR CON FRUTA</h2>
+            <p>Agregar 1/2 tza de yogur griego natural<br>1tza de fresas<br>1 cucharadita de Nucolato encima<br>Agregar 10 almendras fileteadas</p>
+            <img src="Yogur con fruta.jpg" alt="Yogur con fruta">
+        </div>
+        <div class="recipe-card">
+            <h2>CHILAQUILES</h2>
+            <p>1tza de totopos Sanissimo<br>Salsa al gusto<br>90g de pollo desmenuzado<br>1 tomate rebanado<br>1/3 de aguacate rebanado</p>
+            <img src="Chilaquiles.jpeg" alt="Chilaquiles">
+        ></div>
+
     </section>
 
     <section class="recipes" id="snacks">
         <div class="recipe-card">
             <h2>ROLLITOS DE PAVO</h2>
             <p>4 rollitos de pechuga de pavo<br>Rellenar con queso panela</p>
-            <img src="Rollitos de jamon.jpeg" alt="Rollitos de Pavo">
+            <img src="Rollitos de jamon.jpeg" alt="Rollitos de Pavo">        
+        ></div>
+        <div class="recipe-card">
+            <h2>PEPINO CON QUESO COTTAGE</h2>
+            <p>1 pepino mediano<br>3cdas. de queso cottage bajo en grasa</p>
+            <img src="" alt="Penino con queso Cottage">
+        ></div>
+        <div class="recipe-card">
+            <h2>PEPINOS RELLENOS CON ATUN</h2>
+            <p>1 pepino<br>Rellenar con 2cdas. de atún en agu</p>
+            <img src="" alt="Pepinos rellenos de atún">
+        ></div>
+        <div class="recipe-card">
+            <h2>MORAS CONGELADAS CON YOGUR</h2>
+            <p>1tza. de moras(arandanos, frambuesas,etc)<br>2cdas. de yogur sin azucar<b>Cubrir las moras con yogurt y congelar</p>
+            <img src="" alt="Moras congeladas con yogur">
+        ></div>
+        <div class="recipe-card">
+            <h2>BROCHETAS DE POLLO Y VEGETALES</h2>
+            <p>100g de pechuga de pollo cocida<br>Pimientos y champiñones</p>
+            <img src="" alt="Brochetas de pollo y vegetales">
+        ></div>
+        <div class="recipe-card">
+            <h2>ROLLITOS DE PECHUGA DE POLLO</h2>
+            <p>2 hojas de lechuga<br>100g de pollo desmenuzado</p>
+            <img src="" alt="Rollitos de pechuga de pollo">
+        ></div>
+        <div class="recipe-card">
+            <h2>TOSTADAS DE POLLO</h2>
+            <p>3 Tostadas Sanissimo<br>Untar 1/2 taza de frijoles a las tostadas<br>Agregar 25 g de pollo desmenuazdo a cada tostada<br>Agregar 1/3 de penca de nopal en cuadritos a cada tostada(asar en el comal con un poco de aceite)<br> Agregar tres rebanadas de Aguacate rebanado</p>
+            <img src="" alt="Tostadas de pollo">
+        ></div>
+        <div class="recipe-card">
+            <h2>ROLLITOS DE SALMON AHUMADO</h2>
+            <p>2 rebanadas de salmón ahumado<br>2cdas. de queso crema bajo en graso</p>
+            <img src="" alt="Rollitos de salmon">
+        ></div>
+        <div class="recipe-card">
+            <h2>PALITOS DE APIO</h2>
+            <p>2 tallos de apio<br>1cda. de mantequilla de mani o mermelada sin azucar</p>
+            <img src="" alt="Palitos de apio">
+        ></div>
+        <div class="recipe-card">
+            <h2>YOGUR GRIEGO CON NUECES</h2>
+            <p>1tza de yogur griego natural sin azucar<br>Mezclar con una cucharadita de nueces picadas</p>
+            <img src="" alt="Yogurt griego con nueces">
+        ></div>
+    </section>
+
+    <section class="recipes" id="batidos">
+        <div class="recipe-card">
+            <h2>Calabacín, banana y menta</h2>
+            <p>1/2 calabacín<br>1 banana<br>1 puñado de menta<br>Agua o leche al gusto</p>
+            <img src="calabacin-banana-menta.jpg" alt="Calabacín, banana y menta">
         </div>
         <div class="recipe-card">
-            <h2>Inserte receta</h2>
-            <p>INGREDIENTES<br>Instrucciones<br>Dorar con poco aceite<br>Acompañar con lechuga, zanahoria rallada, espinacas, etc.</p>
-            <img src="imagen" alt="">
+            <h2>Germinados de brócoli, piña y jengibre</h2>
+            <p>1 puñado de germinados de brócoli<br>1 taza de piña<br>1 trocito de jengibre<br>Agua o leche al gusto</p>
+            <img src="brocoli-pina-jengibre.jpg" alt="Germinados de brócoli, piña y jengibre">
         </div>
-    </section>
+        <div class="recipe-card">
+            <h2>Toronja, pepino y manzana</h2>
+            <p>1 toronja<br>1/2 pepino<br>1 manzana<br>Agua o leche al gusto</p>
+            <img src="toronja-pepino-manzana.jpg" alt="Toronja, pepino y manzana">
+        </div>
+        <div class="recipe-card">
+            <h2>Lechuga, manzana, limón</h2>
+            <p>1 puñado de lechuga<br>1 manzana<br>1 limón (jugo)<br>Agua o leche al gusto</p>
+            <img src="lechuga-manzana-limon.jpg" alt="Lechuga, manzana, limón">
+        </div>
+        <div class="recipe-card">
+            <h2>Batata, canela, banana y yogur</h2>
+            <p>1 batata cocida<br>1/2 cucharadita de canela<br>1 banana<br>1 taza de yogur<br>Agua o leche al gusto</p>
+            <img src="batata-canela-banana-yogur.jpg" alt="Batata, canela, banana y yogur">
+        </div>
+        <div class="recipe-card">
+            <h2>Coliflor, almendras, polvo de cacao y agua de coco</h2>
+            <p>1 puñado de coliflor<br>1 puñado de almendras<br>1 cucharada de polvo de cacao<br>1 taza de agua de coco</p>
+            <img src="coliflor-almendras-cacao.jpg" alt="Coliflor, almendras, polvo de cacao y agua de coco">
+        </div>
+        <div class="recipe-card">
+            <h2>Açaí, banano y agua de coco</h2>
+            <p>1 taza de açaí congelado<br>1 banana<br>1 taza de agua de coco</p>
+            <img src="acai-banana-agua-coco.jpg" alt="Açaí, banano y agua de coco">
+        </div>
+        <div class="recipe-card">
+            <h2>Pitaya o fruta de dragón, mango y papaya</h2>
+            <p>1 pitaya<br>1 mango<br>1 taza de papaya<br>Agua o leche al gusto</p>
+            <img src="pitaya-mango-papaya.jpg" alt="Pitaya o fruta de dragón, mango y papaya">
+        </div>
+        <div class="recipe-card">
+            <h2>Mango, cúrcuma, banano y arándanos</h2>
+            <p>1 mango<br>1/2 cucharadita de cúrcuma<br>1 banana<br>1 puñado de arándanos<br>Agua o leche al gusto</p>
+            <img src="mango-curcuma-banana-arandanos.jpg" alt="Mango, cúrcuma, banano y arándanos">
+        </div>
+    </section>    
 
     <!-- Pie de página -->
     <footer>
@@ -176,3 +323,4 @@
     <script src="mis-recetas.js"></script>
 </body>
 </html>
+
