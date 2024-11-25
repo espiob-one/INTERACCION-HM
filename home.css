@@ -214,32 +214,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto;
 }
 
 .footer-content p {
     margin: 5px 0;
-}
-
-/* Responsividad para dispositivos pequeños */
-@media (max-width: 768px) {
-    .nav-menu ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .search-bar {
-        width: 80%;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero-text p {
-        font-size: 1em;
-    }
-
-    .sidebar {
-        width: 80%;
-    }
 }
