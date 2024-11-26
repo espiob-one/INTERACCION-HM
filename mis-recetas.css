@@ -155,6 +155,9 @@ footer {
     background-color: black;
     color: white;
     padding: 10px;
+    width:max-content;
+    height: auto;
+
     text-align: center;
 }
 
